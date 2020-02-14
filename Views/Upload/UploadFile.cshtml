@@ -1,0 +1,21 @@
+﻿@{
+                /**/
+
+                ViewBag.Title = "REAutomation";
+}
+
+<h4>Please upload Rack Elevation Spread Sheet</h4>
+
+@using (Html.BeginForm("UploadFile", "Upload", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+    <div>
+        @Html.TextBox("file", "", new { style = "text-align: center", type = "file"}) <br />
+     
+        <input type="submit" value="Upload"  />
+
+        
+    </div>
+
+
+}  
